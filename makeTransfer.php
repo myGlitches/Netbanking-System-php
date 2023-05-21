@@ -33,56 +33,22 @@ if ($_SESSION['current_authorization'] != 'user')
       }
       ::-webkit-scrollbar-thumb:hover 
       {
-        background: #ffea00;
+        background: #ba55fa;
       }
   ::placeholder
   {
-    color:#000051;
+    color:#9c7af0;
     opacity: 1;
     font-family: Comic Sans MS, cursive, sans-serif;
     font-size: 18px;
   }
-  .topnav 
-    {
-        position: fixed;
-        overflow: hidden;
-        background-color: #000000;
-        top: 65;
-        width: 100%;
-        z-index: 3;
-    }
 
-    .topnav a 
-    {
-      float: left;
-      color: #ffea00;
-      font-weight: bold; 
-      font-family: Comic Sans MS, cursive, sans-serif;
-      text-align: center;
-      padding: 14px 30px 14px 30px;
-      text-decoration: none;
-      font-size: 20px;
-      transition-duration: 0.4s;
-    }
-
-    .topnav a:hover 
-    {
-      padding: 14px 20px 14px 20px;
-      background-color: #ffea00;
-      color: black;
-    }
-
-    .topnav a.active 
-    {
-      background-color: #000051;
-      color: #ffea00;
-    }
     .button 
     { 
           border: 1px solid grey; 
           border-radius: 10px;
-          background-color:#ffea00; 
-          color: #000051;
+          background-color:#ba55fa; 
+          color: #9c7af0;
           font-weight: bold; 
           font-family: Comic Sans MS, cursive, sans-serif; 
           font-size: 25px;
@@ -92,7 +58,7 @@ if ($_SESSION['current_authorization'] != 'user')
     .button1
     {
       padding: 40px 100px 40px 100px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black; 
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -100,7 +66,7 @@ if ($_SESSION['current_authorization'] != 'user')
     .button2
     {
       padding: 40px 40px 40px 40px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black; 
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -112,7 +78,7 @@ if ($_SESSION['current_authorization'] != 'user')
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
     .button2:hover 
     {
@@ -121,7 +87,7 @@ if ($_SESSION['current_authorization'] != 'user')
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
 </style>
 <title>Transfer</title>
@@ -143,26 +109,14 @@ if ($_SESSION['current_authorization'] != 'user')
 }
 </script>
 </head>
-<body onload="renderTime();" bgcolor='#000051' style="margin: 0px;">
+<body onload="renderTime();" bgcolor='#9c7af0' style="margin: 0px;">
   <a href="user_account.php">
-  <div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
-      <p style="margin: 0px;">Purple Bank</p>
-  </div>
-  </a>
-<div class="topnav">
-  <a class="btn" href="user_account.php">Home</a>
-  <a class="btn" href="ourbranches.html">Our Branches</a>
-  <a class="btn" href="tutorials.html">Tutorials</a>
-  <a class="btn" href="aboutUs.html">About Us</a>
-  <a class="btn" href="deleteAccount.php">Delete Your Account</a>
-  <a class="btn" href="contactUs.php">Contact Us</a>
-  <!-- <div style="color: #ffea00; padding-top: 5px;padding-right:10px; float: right; font-family:Comic Sans MS, cursive, sans-serif; " id="clock" class="container"></div> -->
-</div>  
+<?php include_once('header.php'); ?>  
 <form action='makeTransfer2.php' method='post'  name='tranf' onsubmit='return validated()';>
-  <table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
+  <table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0"  cellpadding="2" cellspacing="0" bgcolor="#9c7af0">
     <tr> 
       <td width="50%">
-        <div style="background-color: #000051; color: white;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; font-size: 29px">
+        <div style="background-color: #9c7af0; color: white;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; font-size: 29px">
           <p style="margin: 0px; padding: 20px 10px 60px 20px;">Please Enter The Account To Transfer To :</p>
         </div>
       </td>
@@ -173,7 +127,7 @@ if ($_SESSION['current_authorization'] != 'user')
       <td style="padding-left: 300px" align="left">Account Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
       <td align="left">&nbsp;</td>
       <td align="left">  
-        <input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Account Number" type='text' name='transfer_account' size=10 maxlength=20>
+        <input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Account Number" type='text' name='transfer_account' size=10 maxlength=20>
         <input type='hidden' name='user_account' value='<?php echo"$_SESSION[current_accountnumber]"; ?>'>
         </td>
     </tr>
@@ -184,20 +138,21 @@ if ($_SESSION['current_authorization'] != 'user')
     </tr>
     <tr> 
       <td>&nbsp;</td>
-      <td align="center">&nbsp; </td>
+      <td >&nbsp; </td>
       <td>&nbsp;</td>
     </tr>
   </table>
-  <table style="margin-top: 165px" width="100%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
-  <tr align="center"> 
-    <td>
+  <table class="my-5 m-0" width="100%" border="0"  cellpadding="2" cellspacing="0">
+  <tr class="row m-0"> 
+    <td class="col-6 d-flex justify-content-center">
       <button class="button button1" type="submit">Confirm</button>
        </form>
       </td>
-	  <td>
+	  <td class="col-6 d-flex justify-content-center">
 	<form action='user_account.php' method='post' style="margin: 0px;">
         <button class="button button2" type="submit">Go Back To Home</button>
-      </form></td>
+      </form>
+    </td>
   </tr>
  </table>
 </body>

@@ -34,49 +34,15 @@ if ($_SESSION["current_authorization"] != "user")
 		  }
 		  ::-webkit-scrollbar-thumb:hover 
 		  {
-		    background: #ffea00;
+		    background: #ba55fa;
 		  }
-		.topnav 
-		{
-			position: fixed;
-  			overflow: hidden;
-  			background-color: #000000;
-  			top: 65;
-  			width: 100%;
-  			z-index: 3;
-		}
 
-		.topnav a 
-		{
-		  float: left;
-		  color: #ffea00;
-		  font-weight: bold; 
-		  font-family: Comic Sans MS, cursive, sans-serif;
-		  text-align: center;
-		  padding: 14px 30px 14px 30px;
-		  text-decoration: none;
-		  font-size: 20px;
-      	  transition-duration: 0.4s;
-		}
-
-		.topnav a:hover 
-		{
-		  padding: 14px 20px 14px 20px;	
-		  background-color: #ffea00;
-		  color: black;
-		}
-
-		.topnav a.active 
-		{
-		  background-color: #000051;
-		  color: #ffea00;
-		}
 		.button 
     	{ 
           border: 1px solid grey; 
           border-radius: 10px;
-          background-color:#ffea00; 
-          color: #000051;
+          background-color:#ba55fa; 
+          color: #9c7af0;
           font-weight: bold; 
           font-family: Comic Sans MS, cursive, sans-serif; 
           font-size: 25px;
@@ -86,7 +52,7 @@ if ($_SESSION["current_authorization"] != "user")
 	    .button1
 	    {
 	      padding: 40px 100px 40px 100px;
-	      background-color: #ffea00; 
+	      background-color: #ba55fa; 
 	      color: black; 
 	      box-shadow: 0 0 0 10px black;
 	      border-radius: 10px;
@@ -94,7 +60,7 @@ if ($_SESSION["current_authorization"] != "user")
 	    .button2
 	    {
 	      padding: 40px 105px 40px 105px;
-	      background-color: #ffea00; 
+	      background-color: #ba55fa; 
 	      color: black; 
 	      box-shadow: 0 0 0 10px black;
 	      border-radius: 10px;
@@ -106,7 +72,7 @@ if ($_SESSION["current_authorization"] != "user")
 	      background-color: black;
 	      box-shadow: 0 0 0 0px black;
 	      border-radius: 10px;
-	      color: #ffea00;
+	      color: #ba55fa;
 	    }
 	    .button2:hover 
 	    {
@@ -115,11 +81,11 @@ if ($_SESSION["current_authorization"] != "user")
 	      background-color: black;
 	      box-shadow: 0 0 0 0px black;
 	      border-radius: 10px;
-	      color: #ffea00;
+	      color: #ba55fa;
 	    }
 	</style>
 </head>
-<body onload="renderTime();" bgcolor='#000051' style="margin: 0px">
+<body onload="renderTime();" bgcolor='#9c7af0' style="margin: 0px">
 	<?php
 		include 'connection.php';
 		$query = "SELECT * FROM  user_account WHERE account_number='$_SESSION[current_accountnumber]'";
@@ -132,23 +98,14 @@ if ($_SESSION["current_authorization"] != "user")
 		      $day=$row["day"];
 	?>
 	<a href="user_account.php">
-	<div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
-  		<p style="margin: 0px;">Purple Bank</p>
-	</div>
-	</a>
-	<div class="topnav">
-	  <a class="btn" href="user_account.php">Home</a>
-	  <a class="btn" href="ourbranches.html">Our Branches</a>
-	  <a class="btn" href="tutorials.html">Tutorials</a>
-	  <a class="btn" href="aboutUs.html">About Us</a>
-	  <a class="btn active" href="deleteAccount.php">Delete Your Account</a>
-	  <a class="btn" href="contactUs.php">Contact Us</a>
-	  <!-- <div style="color: #ffea00; padding-top: 5px;padding-right:10px; float: right; font-family:Comic Sans MS, cursive, sans-serif; " id="clock" class="container"></div> -->
-	</div>
-	<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#000051">
+
+	<?php include_once('header.php'); ?>
+
+
+	<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#9c7af0">
 		  <tr> 
 		    <td align="left" width="50%">
-		    	<div style="background-color: #000051; color: white;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
+		    	<div style="background-color: #9c7af0; color: white;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 		  			<p style="margin: 0px; padding: 10px 10px 0px 20px;">Are You Sure You Want To Delete This Account?</p>
 				</div>
 			</td>
@@ -179,19 +136,19 @@ if ($_SESSION["current_authorization"] != "user")
 	<?php
 	  }
 	?>
-	<table style="margin-top: 105px" width="100%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
-	  <tr align="center"> 
-	    <td>
+	<div class="row my-5 m-0">
+	  <div class="row m-0 justify-content-between"> 
+	    <div class="col-6 d-flex justify-content-center align-items-center">
 	    	<form action='delete_commit.php' method='post' style="margin: 0px">
       			<button class="button button1" type="submit">Confirm</button>
 	   		</form>
-	    </td>
-		<td>
+	    </div>
+		<div class="col-6 d-flex justify-content-center align-items-center">
 			<form action='user_account.php' method='post' style="margin: 0px">
         		<button class="button button2" type="submit">Go Back</button>
 	      	</form>
-	  	</td>
-	  </tr>
-	</table>
+	  	</div>
+	  </div>
+	</div>
 </body>
 </html>

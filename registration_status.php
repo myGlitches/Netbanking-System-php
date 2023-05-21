@@ -1,7 +1,9 @@
 <html>
 <head>
   <title>Account Number</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style type="text/css">
+
     ::-webkit-scrollbar 
       {
           background: black;
@@ -25,14 +27,14 @@
       }
       ::-webkit-scrollbar-thumb:hover 
       {
-        background: #ffea00;
+        background: #ba55fa;
       }
     .button 
     { 
           border: 1px solid grey; 
           border-radius: 10px;
-          background-color:#ffea00; 
-          color: #000051;
+          background-color:#ba55fa; 
+          color: #9c7af0;
           font-weight: bold; 
           font-family: Comic Sans MS, cursive, sans-serif; 
           font-size: 22px;
@@ -42,7 +44,7 @@
     .button1
     {
       padding: 40px 40px 40px 40px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black; 
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -54,19 +56,19 @@
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
   </style>
 </head>
-<body bgcolor='#000051' style="margin: 0px"> 
+<body style="margin: 0px"> 
   <a href="index.php">
-  <div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
-      <p style="margin: 0px;">Purple Bank</p>
+  <div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ba55fa; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #9c7af0; font-size:40px; text-align: center; padding: 5px;">
+      <p class="text-white m-0">Purple Bank</p>
   </div>
   </a>
 <table style="margin-top: 70px;" width="100%">
-  <tr align="center">
-    <td width="50%" style="padding: 20px 10px 20px 10px; text-align: left; background-color: #000051; color: white;font-family: Comic Sans MS, cursive, sans-serif; font-size: 35px">
+  <tr >
+    <td width="50%" style="padding: 20px 10px 20px 10px; text-align: left;  color: black;font-family: Comic Sans MS, cursive, sans-serif; font-size: 35px">
       Account Numbers Of You and Friends
     </td>
     <td width="50%" style="padding: 10px;">
@@ -86,31 +88,31 @@ while ($row = mysqli_fetch_array($result))  {
 			$day=$row["day"];
 ?>
 
-<table style="border: 5px solid black; border-radius: 10px; margin: 15px 2px 15px 6px;" width="99%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
+<table style="border: 5px solid black; border-radius: 10px; margin: 15px 2px 15px 6px;" width="99%" border="0"  cellpadding="2" cellspacing="0" bgcolor="#9c7af0">
   <tr> 
     <td align="right">&nbsp;</td>
-    <td align="center">&nbsp;</td>
+    <td >&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
-    <td width="45%" align="center">Account Number</td>
-    <td width="10%" align="center">:</td>
-    <td width="45%" align="center"><?php echo"$account_number"; ?></td>
+    <td width="45%" >Account Number</td>
+    <td width="10%" >:</td>
+    <td width="45%" ><?php echo"$account_number"; ?></td>
   </tr>
   <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
-    <td align="center">Identity Card</td>
-    <td align="center">:</td>
-    <td align="center"><?php echo"$unique_id"; ?></td>
+    <td >Identity Card</td>
+    <td >:</td>
+    <td ><?php echo"$unique_id"; ?></td>
   </tr>
   <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
-    <td align="center">Full Name</td>
-    <td align="center">:<br> 
+    <td >Full Name</td>
+    <td >:<br> 
     </td>
-    <td align="center"><?php echo"$username"; ?></td>
+    <td ><?php echo"$username"; ?></td>
   </tr>
   <tr> 
     <td align="right">&nbsp;</td>
-    <td align="center">&nbsp;</td>
+    <td >&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
 </table>
@@ -118,7 +120,7 @@ while ($row = mysqli_fetch_array($result))  {
 	}
 ?>
 <table width="100%">
-  <tr align="center">
+  <tr >
     <td>
       
     </td>

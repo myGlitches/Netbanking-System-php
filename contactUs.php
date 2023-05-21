@@ -26,56 +26,21 @@
 		  }
 		  ::-webkit-scrollbar-thumb:hover 
 		  {
-		    background: #ffea00;
+		    background: #ba55fa;
 		  }
 		::placeholder
 		  {
-		    color:#000051;
+		    color:#9c7af0;
 		    opacity: 1;
 		    font-family: Comic Sans MS, cursive, sans-serif;
 		    font-size: 18px;
 		  }
-		.topnav 
-		{
-			position: fixed;
-  			overflow: hidden;
-  			background-color: #000000;
-  			top: 65;
-  			width: 100%;
-  			z-index: 3;
-		}
-
-		.topnav a
-		{
-		  float: left;
-		  color: #ffea00;
-		  font-weight: bold; 
-		  font-family: Comic Sans MS, cursive, sans-serif;
-		  text-align: center;
-		  padding: 14px 30px 14px 30px;
-		  text-decoration: none;
-		  font-size: 20px;
-  		  transition-duration: 0.4s;
-		}
-
-		.topnav a:hover
-		{
-		  padding: 14px 20px 14px 20px;
-		  background-color: #ffea00;
-		  color: black;
-		}
-
-		.topnav a.active 
-		{
-		  background-color: #000051;
-		  color: #ffea00;
-		}
 		.button 
 	    { 
 	          border: 1px solid grey; 
 	          border-radius: 10px;
-	          background-color:#ffea00; 
-	          color: #000051;
+	          background-color:#ba55fa; 
+	          color: #9c7af0;
 	          font-weight: bold; 
 	          font-family: Comic Sans MS, cursive, sans-serif; 
 	          font-size: 25px;
@@ -85,7 +50,7 @@
 	    .button1
 	    {
 	      padding: 40px 105px 40px 105px;
-	      background-color: #ffea00; 
+	      background-color: #ba55fa; 
 	      color: black;  
 	      box-shadow: 0 0 0 10px black;
 	      border-radius: 10px;
@@ -93,7 +58,7 @@
 	    .button2
 	    {
 	      padding: 40px 40px 40px 40px;
-	      background-color: #ffea00; 
+	      background-color: #ba55fa; 
 	      color: black;  
 	      box-shadow: 0 0 0 10px black;
 	      border-radius: 10px;
@@ -105,7 +70,7 @@
 	      background-color: black;
 	      box-shadow: 0 0 0 0px black;
 	      border-radius: 10px;
-	      color: #ffea00;
+	      color: #ba55fa;
 	    }
 	    .button2:hover 
 	    {
@@ -114,7 +79,7 @@
 	      background-color: black;
 	      box-shadow: 0 0 0 0px black;
 	      border-radius: 10px;
-	      color: #ffea00;
+	      color: #ba55fa;
 	    }
 	</style>
 	<script type="text/javascript">
@@ -134,55 +99,47 @@
 		}
 	</script>
 </head>
-<body onload="renderTime();" bgcolor='#000051' style="margin: 0px">
+
+<body onload="renderTime();" bgcolor='#9c7af0' style="margin: 0px">
 <a href="user_account.php">
-<div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
-		<p style="margin: 0px;">Purple Bank</p>
-</div>
-</a>
-<div class="topnav">
-		<a class="" href="user_account.php">Home</a>
-	    <a class="" href="ourbranches.html">Our Branches</a>
-	  	<a class="" href="tutorials.html">Tutorials</a>  
-	  	<a class="" href="aboutUs.html">About Us</a>
-	  	<a class="" href="deleteAccount.php">Delete Your Account</a>
-		<a class="active" href="contactUs.php">Contact Us</a>
-	  <!-- <div style="color: #ffea00; padding-top: 5px;padding-right:10px; float: right; font-family:Comic Sans MS, cursive, sans-serif; " id="clock" class="container"></div> -->
-</div>
-<form action='email_commit.php' method='post'  name='ema' onsubmit='return validated()';>
-	<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#000051">
+
+<?php include_once('header.php'); ?>
+
+<form action='email_commit.php' method='post'  name='ema' onsubmit='return validated()'; bgcolor="#9c7af0">
+	<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0"  cellpadding="10" cellspacing="0" bgcolor="#9c7af0">
 		<tr>
 			<td align="left" width="40%">
-    			<div style="background-color: #000051; color: white;font-family: Comic Sans MS, cursive, sans-serif; font-size: 40px">
+    			<div style="background-color: #9c7af0; color: white;font-family: Comic Sans MS, cursive, sans-serif; font-size: 40px">
   					<p style="margin: 0px; padding: 10px 10px 0px 20px;">Drop Us Your Query!</p>
 				</div>
 			</td>
-    		<td align="center" width="5%">&nbsp;</td>
+    		<td  width="5%">&nbsp;</td>
     		<td width="55%">&nbsp;</td>
 		</tr>
 		<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 			<td align="left" width="40%" style="padding-left: 35px">What is the issue about</td>
-    		<td align="center" width="5%">:</td>
-    		<td width="55%" align="center"><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. Deposit Failure/Balance not showing" type='text' name="subject" size=48 maxlength=100></td>
+    		<td  width="5%">:</td>
+    		<td width="55%" ><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. Deposit Failure/Balance not showing" type='text' name="subject" size=48 maxlength=100></td>
 		</tr>
 		<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 			<td align="left" width="40%" style="padding-left: 35px">Describe Your Issue</td>
-    		<td align="center" width="5%">:</td>
-    		<td width="55%" align="center">
-    			<textarea style="padding: 17px; color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; border: 1px solid grey; border-radius: 10px" name="message" rows="7" cols="51" placeholder="Eg. My previous deposit dated dd/mm/yyyy at hh:mm hrs is not reflecting in my account statement. Would request a quick resolution on the same."></textarea>
+    		<td  width="5%">:</td>
+    		<td width="55%" >
+    			<textarea style="padding: 17px; color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; border: 1px solid grey; border-radius: 10px" name="message" rows="7" cols="51" placeholder="Eg. My previous deposit dated dd/mm/yyyy at hh:mm hrs is not reflecting in my account statement. Would request a quick resolution on the same."></textarea>
     		</td>
 		</tr>
 	</table>
-	<table style="margin-top: 19px" width="100%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
-	  <tr align="center"> 
-	    <td>
+
+	<div class="mt-5" width="100%" border="0"  cellpadding="2" cellspacing="0">
+	  <div class="row m-0"> 
+	    <div class="col-6 d-flex justify-content-center">
 	       <button class="button button1" type="submit">Submit</button>
-	      </td>
-	      <td>
+	      </div>
+	      <div class="col-6 d-flex justify-content-center">
 	        <button class="button button2" type="reset" onclick="location.href='user_account.php'">Go Back To Home</button>
-	    </td>
-	  </tr>
-	</table>
+	    </div>
+	  </div>
+	</div>
 </form>
 </body>
 </html>

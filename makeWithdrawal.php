@@ -43,56 +43,22 @@ while ($row = mysqli_fetch_array($result))  {
       }
       ::-webkit-scrollbar-thumb:hover 
       {
-        background: #ffea00;
+        background: #ba55fa;
       }
   ::placeholder
   {
-    color:#000051;
+    color:#9c7af0;
     opacity: 1;
     font-family: Comic Sans MS, cursive, sans-serif;
     font-size: 18px;
   }
-  .topnav 
-    {
-        position: fixed;
-        overflow: hidden;
-        background-color: #000000;
-        top: 65;
-        width: 100%;
-        z-index: 3;
-    }
 
-    .topnav a 
-    {
-      float: left;
-      color: #ffea00;
-      font-weight: bold; 
-      font-family: Comic Sans MS, cursive, sans-serif;
-      text-align: center;
-      padding: 14px 30px 14px 30px;
-      text-decoration: none;
-      font-size: 20px;
-      transition-duration: 0.4s;
-    }
-
-    .topnav a:hover 
-    {
-      padding: 14px 20px 14px 20px;
-      background-color: #ffea00;
-      color: black;
-    }
-
-    .topnav a.active 
-    {
-      background-color: #000051;
-      color: #ffea00;
-    }
     .button 
     { 
           border: 1px solid grey; 
           border-radius: 10px;
-          background-color:#ffea00; 
-          color: #000051;
+          background-color:#ba55fa; 
+          color: #9c7af0;
           font-weight: bold; 
           font-family: Comic Sans MS, cursive, sans-serif; 
           font-size: 25px;
@@ -102,7 +68,7 @@ while ($row = mysqli_fetch_array($result))  {
     .button1
     {
       padding: 40px 90px 40px 90px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black; 
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -110,7 +76,7 @@ while ($row = mysqli_fetch_array($result))  {
     .button2
     {
       padding: 40px 40px 40px 40px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black; 
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -122,7 +88,7 @@ while ($row = mysqli_fetch_array($result))  {
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
     .button2:hover 
     {
@@ -131,7 +97,7 @@ while ($row = mysqli_fetch_array($result))  {
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
 </style>  
 <title>Withdrawal</title>
@@ -164,26 +130,16 @@ while ($row = mysqli_fetch_array($result))  {
 }
 </script>
 </head>
-<body onload="renderTime();" bgcolor='#000051' style="margin: 0px;">
+<body onload="renderTime();" bgcolor='#9c7af0' style="margin: 0px;">
   <a href="user_account.php">
-  <div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
-      <p style="margin: 0px;">Purple Bank</p>
-  </div>
-  </a>
-<div class="topnav">
-  <a class="btn" href="user_account.php">Home</a>
-  <a class="btn" href="ourbranches.html">Our Branches</a>
-  <a class="btn" href="tutorials.html">Tutorials</a>
-  <a class="btn" href="aboutUs.html">About Us</a>
-  <a class="btn" href="deleteAccount.php">Delete Your Account</a>
-  <a class="btn" href="contactUs.php">Contact Us</a>
-  <!-- <div style="color: #ffea00; padding-top: 5px;padding-right:10px; float: right; font-family:Comic Sans MS, cursive, sans-serif; " id="clock" class="container"></div> -->
-</div> 
+
+  <?php include_once('header.php'); ?>
+
 <form action='withdrawal_commit.php' method='post'  name='wdrw' onsubmit='return validated()';>
-<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
+<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width="99%" border="0"  cellpadding="2" cellspacing="0" bgcolor="#9c7af0">
   <tr> 
     <td width="58%">
-      <div style="background-color: #000051; font-weight: bold; color: white;font-family: Comic Sans MS, cursive, sans-serif; font-size: 30px">
+      <div style="background-color: #9c7af0; font-weight: bold; color: white;font-family: Comic Sans MS, cursive, sans-serif; font-size: 30px">
         <p style="margin: 0px; padding: 20px 10px 60px 20px;">Please Enter The Amount To Withdraw From :</p>
       </div>
     </td>
@@ -197,14 +153,14 @@ while ($row = mysqli_fetch_array($result))  {
   </tr>
   <tr> 
     <td>&nbsp;</td>
-    <td align="center">&nbsp;</td>
+    <td >&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
     <td style="padding-left: 150px" align="left">Withdrawal Amount In Rupees &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
     <td align="left">&nbsp;</td>
     <td align="left">
-    <input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Withdrawal Value" type='text' name='withdraw' size=10 maxlength=10>
+    <input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Withdrawal Value" type='text' name='withdraw' size=10 maxlength=10>
 	  <input type='hidden' name='balance' value="<?php echo"$balance"; ?>">
 	   <?php	
       date_default_timezone_set("Asia/Kolkata");
@@ -217,23 +173,26 @@ while ($row = mysqli_fetch_array($result))  {
   </tr>
   <tr> 
     <td style="padding-bottom:50px ">&nbsp;</td>
-    <td align="center">&nbsp; </td>
+    <td >&nbsp; </td>
     <td>&nbsp;</td>
   </tr>
   </table>
 
-  <table style="margin-top: 90px" width="100%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
-    <tr align="center">
-      <td>
-        <button class="button button1" type="submit">Withdraw</button>
-      </form>
-      </td>
-      <td>
+
+  <div>
+    <div class="row my-5 m-0">
+    <div class="col-6 justify-content-center d-flex">
+    <button class="button button1" type="submit">Withdraw</button>
+    </form>
+    </div>
+    <div class="col-6 justify-content-center d-flex">
     <form action='user_account.php' method='post' style="margin: 0px;">
       <button class="button button2" type="submit">Go Back To Home</button>
-    </form></td>
-  </tr>
-</table>
+    </form>
+  </div>
+  </div>
+
+
 <?php
 	}
 ?>

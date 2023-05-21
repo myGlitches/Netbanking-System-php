@@ -64,7 +64,7 @@
 		<meta http-equiv='REFRESH' content='0; url=registration.php'>
 		");	
 	}
-	if(!preg_match("/^(\+\d{1,3}[- ]?)?\d{10}$/", $mobile))
+	if(!preg_match("/^(\+\d{1,3}[- ]?)?\d{11}$/", $mobile))
 	{
 		die("<script language='JavaScript'>
 		window.alert('Mobile Number Format Error!')

@@ -1,8 +1,6 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Query Status</title>
-	
+	<title>About Us</title>
 	<script type="text/javascript" src="script.js"></script>
 	<style type="text/css">
 		::-webkit-scrollbar 
@@ -30,7 +28,41 @@
 		  {
 		    background: #ba55fa;
 		  }
+		.topnav 
+		{
+			position: fixed;
+  			overflow: hidden;
+  			background-color: #000000;
+  			top: 65;
+  			width: 100%;
+  			z-index: 3;
+		}
 
+		.topnav a 
+		{
+		  float: left;
+		  color: #ba55fa;
+		  font-weight: bold; 
+		  font-family: Comic Sans MS, cursive, sans-serif;
+		  text-align: center;
+		  padding: 14px 30px 14px 30px;
+		  text-decoration: none;
+		  font-size: 20px;
+      	  transition-duration: 0.4s;
+		}
+
+		.topnav a:hover 
+		{
+		  padding: 14px 20px 14px 20px;
+		  background-color: #ba55fa;
+		  color: black;
+		}
+
+		.topnav a.active 
+		{
+		  background-color: #9c7af0;
+		  color: #ba55fa;
+		}
 		.button 
     	{ 
           border: 1px solid grey; 
@@ -60,29 +92,26 @@
 	      border-radius: 10px;
 	      color: #ba55fa;
     	}
-
-		.topnav-custom {
-			margin-top: 70px
-		}
 	</style>
 </head>
-<body onload="renderTime();"  style="margin: 0px">
+<body onload="renderTime();" bgcolor='#9c7af0' style="margin: 0px">
+	<a href="user_account.php">
 
 
-  <?php include_once('header.php'); ?>
-  
-  <table style="background: #9c7af0; margin-top: 40px; margin-left: 7px; border: 5px solid black; border-radius: 10px" width="99%";>
-  	<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 32px">
+		<?php include_once('header.php'); ?>
+		
+	<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 10px 7.5px;' width='99%' border='0' align='center' bgcolor='#9c7af0'>
+		<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 23px">
 			<td style="text-align: justify; padding: 20px;">
-					Dear Customer, your issue has been forwarded to our team.<br>
-					You can rest assured that your issue will be resolved soon. Our executives would be contacting you on your registered Email-ID shortly.<br>
-					Till then you can continue to use our services.<br>
-					Thank You!
+					Purple Bank is an online banking system and has been developed to manage operations like Balance Enquiry, 
+					generating account statements, transferring funds from one account to another account etc. It allows the 
+					customer to access the website for viewing their account details and enables them to perform transactions 
+					like withdrawal, deposit and money transfer.
 			</td>
 		</tr>
-  </table>
-  <div>
-		    <div class="row my-5 m-0">
+	</table>
+	<div class="my-5 m-0">
+		    <div class="row m-0 justify-content-center">
 		    	<div class="d-flex justify-content-center">
 				   <form action='user_account.php' method='post'>
 				   	<button class="button button1" type="submit">Go Back To Home Page</button>				   	

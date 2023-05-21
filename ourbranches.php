@@ -26,7 +26,7 @@
 		  }
 		  ::-webkit-scrollbar-thumb:hover 
 		  {
-		    background: #ffea00;
+		    background: #ba55fa;
 		  }		
 		.topnav 
 		{
@@ -40,7 +40,7 @@
 		.topnav a 
 		{
 		  float: left;
-		  color: #ffea00;
+		  color: #ba55fa;
 		  font-weight: bold; 
 		  font-family: Comic Sans MS, cursive, sans-serif;
 		  text-align: center;
@@ -53,21 +53,21 @@
 		.topnav a:hover 
 		{
 		  padding: 14px 20px 14px 20px;
-		  background-color: #ffea00;
+		  background-color: #ba55fa;
 		  color: black;
 		}
 
 		.topnav a.active 
 		{
-		  background-color: #000051;
-		  color: #ffea00;
+		  background-color: #9c7af0;
+		  color: #ba55fa;
 		}
 		.button 
     	{ 
           border: 1px solid grey; 
           border-radius: 10px;
-          background-color:#ffea00; 
-          color: #000051;
+          background-color:#ba55fa; 
+          color: #9c7af0;
           font-weight: bold; 
           font-family: Comic Sans MS, cursive, sans-serif; 
           font-size: 25px;
@@ -77,7 +77,7 @@
     	.button1
     	{
 	      padding: 40px 40px 40px 40px;
-	      background-color: #ffea00; 
+	      background-color: #ba55fa; 
 	      color: black; 
 	      box-shadow: 0 0 0 10px black;
 	      border-radius: 10px;
@@ -89,26 +89,17 @@
 	      background-color: black;
 	      box-shadow: 0 0 0 0px black;
 	      border-radius: 10px;
-	      color: #ffea00;
+	      color: #ba55fa;
     	}
 	</style>
 </head>
-<body onload="renderTime();" bgcolor='#000051' style="margin: 0px">
+<body onload="renderTime();" bgcolor='#9c7af0' style="margin: 0px">
 	<a href="user_account.php">
-	<div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
-  		<p style="margin: 0px;">Purple Bank</p>
-	</div>
-	</a>
-	<div class="topnav">
-	  <a class="btn" href="user_account.php">Home</a>
-	  <a class="btn active" href="ourbranches.html">Our Branches</a>
-	  <a class="btn" href="tutorials.html">Tutorials</a>
-	  <a class="btn" href="aboutUs.html">About Us</a>
-	  <a class="btn" href="deleteAccount.php">Delete Your Account</a>
-	  <a class="btn" href="contactUs.php">Contact Us</a>
-	  <!-- <div style="color: #ffea00; padding-top: 5px;padding-right:10px; float: right; font-family:Comic Sans MS, cursive, sans-serif; " id="clock" class="container"></div> -->
-	</div>
-		<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 5px 7.5px;' width='99%' border='0' align='center' bgcolor='#000051'>
+
+	
+	<?php include_once('header.php'); ?>
+
+		<table style='border: 5px solid black; border-radius: 10px; margin: 130px 7.5px 5px 7.5px;' width='99%' border='0' align='center' bgcolor='#9c7af0'>
 			<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 				<td width="19%" align="left" style="padding-left: 20px;">Branch Name</td>
 				<td width="6%" align="left">:</td>
@@ -135,7 +126,7 @@
 				<td width="75%" align="left">033-32597898 / +91-9635874212</td>
 			</tr>
 		</table>
-		<table style='border: 5px solid black; border-radius: 10px; margin: 10px 7.5px 5px 7.5px;' width='99%' border='0' align='center' bgcolor='#000051'>
+		<table style='border: 5px solid black; border-radius: 10px; margin: 10px 7.5px 5px 7.5px;' width='99%' border='0' align='center' bgcolor='#9c7af0'>
 			<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 				<td width="19%" align="left" style="padding-left: 20px;">Branch Name</td>
 				<td width="6%" align="left">:</td>
@@ -162,7 +153,7 @@
 				<td width="75%" align="left">033-25956545 / +91-9857694321</td>
 			</tr>
 		</table>
-		<table style='border: 5px solid black; border-radius: 10px; margin: 10px 7.5px 5px 7.5px;' width='99%' border='0' align='center' bgcolor='#000051'>
+		<table style='border: 5px solid black; border-radius: 10px; margin: 10px 7.5px 5px 7.5px;' width='99%' border='0' align='center' bgcolor='#9c7af0'>
 			<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 				<td width="19%" align="left" style="padding-left: 20px;">Branch Name</td>
 				<td width="6%" align="left">:</td>
@@ -189,7 +180,7 @@
 				<td width="75%" align="left">033-24248585 / +91-9686764512</td>
 			</tr>
 		</table>
-		<table style='border: 5px solid black; border-radius: 10px; margin: 10px 7.5px 10px 7.5px;' width='99%' border='0' align='center' bgcolor='#000051'>
+		<table style='border: 5px solid black; border-radius: 10px; margin: 10px 7.5px 10px 7.5px;' width='99%' border='0' align='center' bgcolor='#9c7af0'>
 			<tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px">
 				<td width="19%" align="left" style="padding-left: 20px;">Branch Name</td>
 				<td width="6%" align="left">:</td>
@@ -216,14 +207,14 @@
 				<td width="75%" align="left">033-22444422 / +91-9996577857</td>
 			</tr>
 		</table>
-		<table style="margin-top: 20px" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#000051">
-		    <tr align="center">
-		    	<td>
-				   <form action='user_account.php' method='post'>
+		<div class="mt-5">
+		    <div class="row m-0 justify-content-center">
+		    	<div class="row m-0 justify-content-center">
+				   <form class="col-4" action='user_account.php' method='post'>
 				   	<button class="button button1" type="submit">Go Back To Home Page</button>
 				   </form>
-				</td>
-			</tr>
-		</table>
+				</div>
+			</div>
+		</div>
 </body>
 </html>

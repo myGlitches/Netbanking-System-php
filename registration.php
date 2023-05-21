@@ -2,6 +2,8 @@
 <head>
   <title>Register</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <style type="text/css">
   ::-webkit-scrollbar 
   {
@@ -26,11 +28,11 @@
   }
   ::-webkit-scrollbar-thumb:hover 
   {
-    background: #ffea00;
+    background: #ba55fa;
   }
   ::placeholder
   {
-    color:#000051;
+    color:#9c7af0;
     opacity: 1;
     font-family: Comic Sans MS, cursive, sans-serif;
     font-size: 18px;
@@ -39,8 +41,8 @@
     { 
           border: 1px solid grey; 
           border-radius: 10px;
-          background-color:#ffea00; 
-          color: #000051;
+          background-color:#ba55fa; 
+          color: #9c7af0;
           font-weight: bold; 
           font-family: Comic Sans MS, cursive, sans-serif; 
           font-size: 25px;
@@ -50,7 +52,7 @@
     .button1
     {
       padding: 40px 100px 40px 100px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black;  
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -58,7 +60,7 @@
     .button2
     {
       padding: 40px 40px 40px 40px;
-      background-color: #ffea00; 
+      background-color: #ba55fa; 
       color: black;  
       box-shadow: 0 0 0 10px black;
       border-radius: 10px;
@@ -70,7 +72,7 @@
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
     .button2:hover 
     {
@@ -79,7 +81,7 @@
       background-color: black;
       box-shadow: 0 0 0 0px black;
       border-radius: 10px;
-      color: #ffea00;
+      color: #ba55fa;
     }
 </style>
 <script language="JavaScript">
@@ -157,61 +159,61 @@
 			}
 }
 </script>
-<body bgcolor='#000051' style="margin: 0px">
+<body style="margin: 0px">
   <a href="index.php">
-  <div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ffea00; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #000051; font-size:40px; text-align: center; padding: 5px;">
+  <div class="Top Bar" style="z-index: 3; overflow: hidden; margin-top:0px; width: 100%;  position: fixed; top: 0; background-color: #ba55fa; font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif; color: #fff; font-size:40px; text-align: center; padding: 5px;">
       <p style="margin: 0px;">Purple Bank</p>
   </div>
   </a>  
 <form action='registration_commit.php' method='post'  name='regs' onsubmit='return validated()';>
-  <table style='border: 5px solid black; border-radius: 10px; margin: 80px 7.5px 15px 7.5px;' width="99%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
+  <table style='border: 5px solid black; border-radius: 10px; margin: 80px 7.5px 15px 7.5px;' width="99%" border="0"  cellpadding="2" cellspacing="0" bgcolor="#9c7af0">
     <tr> 
       <td align="right">&nbsp;</td>
-      <td align="center">&nbsp;</td>
+      <td >&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td width="30%" align="right">Unique Identification Number </td>
-      <td width="4%" align="center">:</td>
-      <td width="66%"><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. EYR854654" type='text' name='unique_id' size=24 maxlength=12> Aadhar/Pan Number (AlphaNumeric only) </td>
+      <td width="4%" >:</td>
+      <td width="66%"><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. EYR854654" type='text' name='unique_id' size=24 maxlength=12> Aadhar/Pan Number (AlphaNumeric only) </td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">Full Name</td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. Test User" type='name' name='username' size=24 maxlength=40> Alphabets only </td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. Test User" type='name' name='username' size=24 maxlength=40> Alphabets only </td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">Password</td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Password" type='password' name='password' size=24 maxlength=10> 6-10 chars (1 alpha & 1 numeric must) </td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Password" type='password' name='password' size=24 maxlength=10> 6-10 chars (1 alpha & 1 numeric must) </td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">Re-Enter Password </td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Password" type='password' name='password2' size=24 maxlength=10> 6-10 chars (1 alpha & 1 numeric must)</td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Password" type='text' name='password2' size=24 maxlength=10> 6-10 chars (1 alpha & 1 numeric must)</td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px;"> 
       <td align="right" style="padding-top: 10px;padding-bottom: 10px;">Gender</td>
-      <td align="center">:</td>
-      <td><input style="color: #000051" type="radio" name="gender" value="Male" required="required"> Male
+      <td >:</td>
+      <td><input style="color: #9c7af0" type="radio" name="gender" value="Male" required="required"> Male
           <input type="radio" name="gender" value="Female"> Female
           <input type="radio" name="gender" value="Other"> Other
       </td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">Email</td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. example@ymail.com" type='Email' name='email' size=24 maxlength=50></td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. example@ymail.com" type='Email' name='email' size=24 maxlength=50></td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">Mobile</td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. 2223334445" type='text' name='mobile' size=24 maxlength=11> Maximum 11 digits (Numeric) </td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. 2223334445" type='text' name='mobile' size=24 maxlength=12> Maximum 11 digits (Numeric) </td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">State</td>
-      <td align="center">:</td>
-      <td><select style="font-family: Comic Sans MS, cursive, sans-serif; font-weight: bold; color: #000051; font-size: 18px; padding-top: 15px; padding-bottom: 15px; padding-left: 16px; padding-right: 49px; border: 1px solid grey; border-radius: 10px" name="state" id="state" class="form-control" required="required">
+      <td >:</td>
+      <td><select style="font-family: Comic Sans MS, cursive, sans-serif; font-weight: bold; color: #9c7af0; font-size: 18px; padding-top: 15px; padding-bottom: 15px; padding-left: 16px; padding-right: 49px; border: 1px solid grey; border-radius: 10px" name="state" id="state" required="required">
             <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -252,17 +254,17 @@
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">PinCode</td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. 711101" type='text' name='pincode' size=24 maxlength=6> 6 Digits (Numeric)</td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. 711101" type='text' name='pincode' size=24 maxlength=6> 6 Digits (Numeric)</td>
     </tr>
     <tr style="color: white;font-weight:bold;font-family: Comic Sans MS, cursive, sans-serif; font-size: 25px"> 
       <td align="right">Deposit (Rs)</td>
-      <td align="center">:</td>
-      <td><input style="color:#000051;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. 10000" type='text' name='balance' size=24 maxlength=10> Minimum 1000 Rupees </td>
+      <td >:</td>
+      <td><input style="color:#9c7af0;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif;font-size: 18px; padding: 18px; border: 1px solid grey; border-radius: 10px" placeholder="Eg. 10000" type='text' name='balance' size=24 maxlength=10> Minimum 1000 Rupees </td>
     </tr>
     <tr> 
       <td style="padding-bottom: 0px;" align="right">&nbsp;</td>
-      <td align="center">&nbsp;</td>
+      <td >&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
     <tr> 
@@ -275,20 +277,22 @@
 			     echo "<input type='hidden' name='time' value='$time'>";
 			  ?>
       </td>
-      <td align="center">&nbsp; </td>
+      <td >&nbsp; </td>
       <td>&nbsp;</td>
     </tr>
   </table>
-  <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#000051">
-  <tr align="center"> 
-    <td>
+
+  <div>
+  <div class="row my-5 m-0"> 
+      <div class="col-6 d-flex justify-content-center">
        <button class="button button1" type="submit">Register</button>
-      </td>
-      <td>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
         <button class="button button2" type="reset" onclick="location.href='index.php'">Go Back To Home</button>
-    </td>
-  </tr>
- </table>
+    </div>
+</div>
+ </div>
+
 </form>
 </body>
 </html>

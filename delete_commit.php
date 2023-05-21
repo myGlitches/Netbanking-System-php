@@ -2,7 +2,7 @@
 <head>
 	<title></title>
 </head>
-<body bgcolor="#000051">
+<body bgcolor="#9c7af0">
 	<?php
 		session_start();
 		if ($_SESSION['current_authorization'] != 'user')
